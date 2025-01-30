@@ -32,5 +32,32 @@
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
+   <script>
+        const appStoreUrl = "https://apps.apple.com/us/app/awaed-%D8%B9%D9%88%D8%A7%D8%A6%D8%AF/id1610134585?platform=iphone";
+        const googleStoreUrl = "https://play.google.com/store/apps/details?id=com.awaed.app&amp;hl=ar&amp;gl=US&amp;pli=1";
+        const baseUrl = "https://awaed.capital/";
+        function detectDevice() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            // iOS detection
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = appStoreUrl;
+            }
+            // Android detection
+            else if (/android/i.test(userAgent)) {
+                window.location.href = googleStoreUrl; 
+            }
+            // Fallback for other devices
+            else {
+                window.location.href = baseUrl;
+            }
+        }
+        // Call the function to detect device
+        detectDevice();
+        // Fallback if deep link fails
+        setTimeout(function () {
+            // Fallback after a delay
+            window.location.href = baseUrl;
+        }, 2000);
+    </script>
 </body>
 </html>
