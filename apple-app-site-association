@@ -1,0 +1,28 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "63D48BGNG5.com.awaed.app",
+        "paths": [
+          "NOT /_/*",
+          "/*"
+        ]
+      },
+      {
+        "appID": "X2AM5WQP84.com.awaedApplication",
+        "paths": [
+          "NOT /_/*",
+          "/*"
+        ]
+      },
+      {
+        "appID": "X2AM5WQP84.com.awaed",
+        "paths": [
+          "NOT /_/*",
+          "/*"
+        ]
+      }
+    ]
+  }
+}
