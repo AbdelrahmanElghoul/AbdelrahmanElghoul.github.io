@@ -1,9 +1,14 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.awaed.app",
-    "sha256_cert_fingerprints":
-    ["B3:66:76:D2:88:80:4F:8A:6E:22:00:5C:12:09:A1:B0:FF:4F:7F:77:D6:A2:AF:4A:96:4F:D5:17:8C:97:70:F8"]
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.awaed.app",
+      "sha256_cert_fingerprints": [
+        "B3:66:76:D2:88:80:4F:8A:6E:22:00:5C:12:09:A1:B0:FF:4F:7F:77:D6:A2:AF:4A:96:4F:D5:17:8C:97:70:F8"
+      ]
+    }
   }
-}]
+]
